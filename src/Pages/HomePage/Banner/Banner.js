@@ -10,14 +10,14 @@ const Banner = () => {
                 <div className="flex flex-col items-center ">
 
                     <div className="flex flex-col justify-center items-center text-center  max-w-7xl   my-8 py-4 px-10">
-                        <h1 className="text-xl font-medium tracking-wider ">Welcome to all cricket lovers in our site</h1>
+                        <h1 className="text-xl font-medium tracking-wider ">Welcome to all seller and buyer in our site</h1>
                         <span className="underline underline-offset-2 text-gray-700-mt-3"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                             &nbsp; </span>
                         <div className="flex flex-col text-gray-700mt-5">
-                            <h1 className="text-4xl md:text-[50px] font-semibold text-amber-400">Cricket Lover</h1>
+                            <h1 className="text-4xl md:text-[50px] font-semibold text-amber-400">Yahoo Shopping</h1>
                             <p className="text-xl mt-2 md:mt-4 tracking-wide">Place to fulfill your hobbies</p>
                         </div>
-                        <p className="mt-4 text-lg md:w-[52%] tracking-wide leading-7 ">This is the place for cricket lovers, where they can buy used cricket playing materials with reasonable price and also anyone can sell their used cricket playing materials here.</p>
+                        <p className="mt-4 text-lg md:w-[52%] tracking-wide leading-7 ">This is the place for all seller and buyer, where they can buy and sell their products with reasonable price and also anyone can sell their products here.</p>
                         <div className="space-x-3 mt-6 md:mt-4 text-white">
                             <a href="#"> <i
                                 className="fa-brands fa-facebook-f bg-blue-600 hover:text-blue-500 hover:bg-white rounded-full px-3 py-[11px] w-9 h-9 text-center "></i>

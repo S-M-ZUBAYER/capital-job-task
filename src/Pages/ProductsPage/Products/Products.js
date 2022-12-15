@@ -1,16 +1,12 @@
-import { async } from '@firebase/util';
 import { useQuery } from '@tanstack/react-query';
-import axios from 'axios';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import DisplaySpinner from '../../../components/Sprinners/DisplaySpinner/DisplaySpinner';
-import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import Banner from '../../HomePage/Banner/Banner';
 import BookingModal from '../BookigProducts/BookingModal/BookingModal';
 import ProductCard from '../ProductCard/ProductCard';
 
 const Products = () => {
     const [bookingProduct, setBookingProduct] = useState(null);
-    const { loading, setLoading } = useContext(AuthContext)
     const pathname = document.location.pathname;
     const idArr = pathname.split('/');
     const id = idArr[2];
@@ -24,22 +20,6 @@ const Products = () => {
             return data;
         }
     })
-    // const { data: products = [] } = useQuery({
-    //     queryKey: ['products'],
-    //     queryFn: async () => {
-    //         const res = await fetch(`http://localhost:5000/products/?category=${findCategory?.categoryName}`);
-    //         const data = await res.json();
-    //         return data;
-    //     }
-    // })
-    // console.log(products)
-    // useEffect(() => {
-    //     axios.get(`http://localhost:5000/categories`)
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             console.log(data)
-    //         })
-    // }, [])
     const findCategory = categories.find(category => category?._id === id)
     console.log(findCategory?.categoryName)
     const url = `http://localhost:5000/products`;

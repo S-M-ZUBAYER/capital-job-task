@@ -6,7 +6,7 @@ import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 const Navbar = () => {
     const { user, logout } = useContext(AuthContext)
     return (
-        <div className="sticky top-0 z-40 mb-12">
+        <div className="sticky top-0 z-40">
             <div className="navbar  bg-base-100 text-slate-400 bg-white">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -16,17 +16,15 @@ const Navbar = () => {
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><Link to='/'>Home</Link></li>
                             <li><Link to='/dashboard'>Dashboard</Link></li>
-                            <li><Link to='/blog'>Blog</Link></li>
                             <li><Link to='/contact'>Contact</Link></li>
                         </ul>
                     </div>
-                    <Link className="btn btn-ghost normal-case text-xl"><img className="w-8 h-8 rounded-xl mr-2" src='https://i.ibb.co/LCFZm0g/Cricket-Lovere.webp' ></img>Cricket Lover</Link>
+                    <Link className="btn btn-ghost normal-case text-xl"><img className="w-8 h-8 rounded-xl mr-2" src='https://i.ibb.co/LCFZm0g/Cricket-Lovere.webp' ></img>Yahoo Shopping</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/dashboard'>Dashboard</Link></li>
-                        <li><Link to='/blog'>Blog</Link></li>
                         <li><Link to='/contact'>Contact</Link></li>
                     </ul>
                 </div>
