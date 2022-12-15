@@ -1,0 +1,32 @@
+[
+    {
+        "categoryName": "Bats",
+        "categoryImg": "https://i.ibb.co/7W634kX/GN-MAAX-500-J-Bat.jpg",
+        "categoryId": 1
+    },
+    {
+        "categoryName": "Balls",
+        "categoryImg": "https://i.ibb.co/QCF74K6/th.jpg",
+        "categoryId": 2
+    },
+    {
+        "categoryName": "Helmets",
+        "categoryImg": "https://i.ibb.co/0Mtg98c/helmet.webp",
+        "categoryId": 3
+    },
+    {
+        "categoryName": "Gloves",
+        "categoryImg": "https://i.ibb.co/QDkKK58/g-5.jpg",
+        "categoryId": 4
+    },
+    {
+        "categoryName": "Stumps",
+        "categoryImg": "https://i.ibb.co/rvBtf5R/s-1.jpg",
+        "categoryId": 5
+    },
+    {
+        "categoryName": "pads",
+        "categoryImg": "https://i.ibb.co/0mrd750/p-1.jpg",
+        "categoryId": 6
+    }
+]
