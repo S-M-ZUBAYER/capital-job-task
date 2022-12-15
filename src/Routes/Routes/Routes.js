@@ -3,7 +3,6 @@ import MyOrders from "../../DashboardLayout/MyOrders/MyOrders";
 import Main from "../../Layout/Main/Main";
 import LogIn from "../../Pages/AuthenticationPages/LogInPage/LogIn";
 import Register from "../../Pages/AuthenticationPages/RegisterPage/Register";
-import Blog from "../../Pages/BlogPage/Blog/Blog";
 import Dashboard from "../../Pages/DashboardPage/Dashboard/Dashboard";
 import AddProduct from "../../Pages/DashboardPage/ShareDashboard/AddProduct/AddProduct";
 import AllBuyers from "../../Pages/DashboardPage/ShareDashboard/AllBuyers/AllBuyers";
@@ -36,10 +35,6 @@ const router = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
-            },
-            {
-                path: '/blog',
-                element: <Blog></Blog>
             },
             {
                 path: '/category/:id',

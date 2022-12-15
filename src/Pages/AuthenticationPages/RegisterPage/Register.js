@@ -24,8 +24,6 @@ const Register = () => {
         const formData = new FormData();
         formData.append('image', image);
 
-        //70078de6ca48a9e25382bba10bf2e8df
-        //https://api.imgbb.com/1/upload
         console.log(process.env.REACT_APP_imgbbKey)
 
         const url = `https://api.imgbb.com/1/upload?key=${process.env.REACT_APP_imgbbKey}`;
@@ -82,7 +80,6 @@ const Register = () => {
                         <div className="form-control">
                             <div className="input-group">
                                 <select name='type' className="select select-bordered w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-green-500 bg-gray-200 text-gray-900">
-                                    {/* <option disabled selected>Pick category</option> */}
                                     <option>Buyer</option>
                                     <option>Seller</option>
                                 </select>

@@ -2,23 +2,23 @@ import React from 'react';
 import toast from 'react-hot-toast';
 
 const EachProduct = ({ product, refetch }) => {
-    const handleToAdvertise = (product) => {
-        fetch(`https://cricket-lover-server-site-s-m-zubayer.vercel.app/product/${product?._id}`, {
-            method: "PUT",
-            headers: {
-                'content-type': 'application/json'
-            }
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data)
-                localStorage.setItem('Cricket-Lover', data.token);
-                refetch();
-                toast.success('Product updated successfully');
-            })
+    // const handleToAdvertise = (product) => {
+    //     fetch(`https://cricket-lover-server-site-s-m-zubayer.vercel.app/product/${product?._id}`, {
+    //         method: "PUT",
+    //         headers: {
+    //             'content-type': 'application/json'
+    //         }
+    //     })
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             console.log(data)
+    //             localStorage.setItem('Cricket-Lover', data.token);
+    //             refetch();
+    //             toast.success('Product updated successfully');
+    //         })
 
 
-    }
+    // }
     const handleToDelete = (id) => {
         fetch(`https://cricket-lover-server-site-s-m-zubayer.vercel.app/product/${product._id}`, {
             method: "DELETE",
@@ -66,7 +66,7 @@ const EachProduct = ({ product, refetch }) => {
                                 product?.available
                                     ?
 
-                                    <button onClick={() => handleToAdvertise(product)}
+                                    <button
                                         class=" inline-block rounded-full bg-gradient-to-r from-green-500 via-blue-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
                                     >
                                         {
@@ -75,19 +75,15 @@ const EachProduct = ({ product, refetch }) => {
                                                 <span
                                                     class="block rounded-full bg-white px-3 py-1 text-sm font-medium hover:bg-transparent"
                                                 >
-                                                    Advertised
+                                                    Unsold
                                                 </span> :
                                                 <span
                                                     class="block rounded-full bg-green px-3 py-1 text-sm font-medium hover:bg-transparent"
                                                 >
-                                                    Advertise
+                                                    Unsold
                                                 </span>
                                         }
-                                        {/* <span
-                                            class="block rounded-full bg-white px-3 py-1 text-sm font-medium hover:bg-transparent"
-                                        >
-                                            Advertise
-                                        </span> */}
+
                                     </button>
                                     :
                                     <p className="text-center text-sm px-6 bg-green-500 py-2  rounded-3xl  text-white font-medium">Sold</p>
