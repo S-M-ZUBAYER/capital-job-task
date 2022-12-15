@@ -15,7 +15,7 @@ const Home = () => {
     const { loading, setLoading } = useContext(AuthContext);
     const [allproducts, setAllProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://cricket-lover-server-site-main.vercel.app/products')
 
             .then(res => res.json())
             .then(data => {
@@ -27,7 +27,7 @@ const Home = () => {
 
     }, [])
 
-    const url = `http://localhost:5000/products`;
+    const url = `https://cricket-lover-server-site-main.vercel.app/products`;
 
     const { data: products = [], isLoading, refetch } = useQuery({
         queryKey: ['products'],

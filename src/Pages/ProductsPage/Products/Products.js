@@ -14,7 +14,7 @@ const Products = () => {
     const { data: categories = [] } = useQuery({
         queryKey: ['products'],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/categories`);
+            const res = await fetch(`https://cricket-lover-server-site-main.vercel.app/categories`);
             const data = await res.json();
             console.log(data)
             return data;
@@ -22,7 +22,7 @@ const Products = () => {
     })
     const findCategory = categories.find(category => category?._id === id)
     console.log(findCategory?.categoryName)
-    const url = `http://localhost:5000/products`;
+    const url = `https://cricket-lover-server-site-main.vercel.app/products`;
 
 
     const { data: products = [], isLoading } = useQuery({

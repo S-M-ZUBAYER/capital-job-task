@@ -15,7 +15,7 @@ const Dashboard = () => {
     const [isBuyer] = useBuyer(user?.email)
     const [isSeller] = useSeller(user?.email)
 
-    const url = `http://localhost:5000/users/${user?.email}`;
+    const url = `https://cricket-lover-server-site-main.vercel.app/users/${user?.email}`;
 
     const { data: users = [], isLoading, refetch } = useQuery({
         queryKey: ['users'],
