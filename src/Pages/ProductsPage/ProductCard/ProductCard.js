@@ -22,7 +22,7 @@ const ProductCard = ({ product, setBookingProduct }) => {
     refetch();
 
 
-    const { name, productName, image, sellerImg, resalePrice, date, quality, condition, phone, sellReason, location, description, originalPrice, duration } = product;
+    const { name, productName, image, sellerImg, resalePrice, date, quality, condition, phone, location, description, price, duration } = product;
     return (
         <div>
             <div className="flex flex-col max-w-lg p-6  overflow-hidden rounded-lg shadow-md bg-gray-900 text-gray-100">
@@ -42,7 +42,7 @@ const ProductCard = ({ product, setBookingProduct }) => {
                         </div>
                         <div className="flex justify-between w-full">
                             <p className="text-xs lg:text-sm">Location: {location}</p>
-                            <p className="text-xs">Use Duration: {duration} {duration > 1 ? 'months' : 'month'}</p>
+                            {/* <p className="text-xs">Use Duration: {duration} {duration > 1 ? 'months' : 'month'}</p> */}
                         </div>
                         <p className="text-sm text-left">Contact: {phone}</p>
 
@@ -58,10 +58,10 @@ const ProductCard = ({ product, setBookingProduct }) => {
                     <p className="text-sm mr-3">Damage: {quality}</p>
                 </div>
                 <div className="flex justify-between w-full mb-3">
-                    <p className="text-base  text-left mr-3">Original Price:{originalPrice}$</p>
-                    <p className="text-base mr-3">Resale Price: {resalePrice}$</p>
+                    <p className="text-base  text-left mr-3">Price:{price}$</p>
+                    {/* <p className="text-base mr-3">Resale Price: {resalePrice}$</p> */}
                 </div>
-                <p className="text-sm text-left mb-5">Reason: <span className="text-sm">{sellReason}</span></p>
+                {/* <p className="text-sm text-left mb-5">Reason: <span className="text-sm">{sellReason}</span></p> */}
                 <div>
 
                     <label

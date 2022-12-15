@@ -79,7 +79,7 @@ const BookingModal = ({ refetch, product }) => {
                         <input name="productName" type="text" defaultValue={product?.productName} disabled placeholder="Item name" className="input w-full input-bordered" />
                         <input name="sellerName" defaultValue={product?.name} disabled type="text" placeholder="Your Name" className="input w-full input-bordered" />
                         <input name="img" type="text" defaultValue={product?.image} disabled placeholder="Product Img" className="input w-full input-bordered" />
-                        <input name="price" type="text" defaultValue={product?.resalePrice} disabled placeholder="Price" className="input w-full input-bordered" />
+                        <input name="price" type="text" defaultValue={product?.price} disabled placeholder="Price" className="input w-full input-bordered" />
                         <input name="date" type="text" defaultValue={formatDate} disabled placeholder="Booking date" className="input w-full input-bordered" />
                         <input name="time" type="text" defaultValue={time} disabled placeholder="Booking date" className="input w-full input-bordered" />
                         <input name="location" type="text" placeholder="Location" className="input w-full input-bordered" />
