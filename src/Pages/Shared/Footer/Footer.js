@@ -83,7 +83,7 @@ const Footer = () => {
                     <hr class="h-px my-6 bg-gray-200 border-none dark:bg-gray-700" />
 
                     <div>
-                        <p class="text-center text-gray-500 dark:text-gray-400">© Yahoo Shopping 2022 - All rights reserved</p>
+                        <p class="text-center text-gray-500 dark:text-gray-400">© SSS Shop 2022 - All rights reserved</p>
                     </div>
                 </div>
             </footer>
