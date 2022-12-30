@@ -64,11 +64,11 @@ const Register = () => {
     }
 
     return (
-        <div className='flex justify-center items-center pt-8 drop-shadow-2xl'>
-            <div className='flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-gray-100 text-gray-900'>
+        <div className='flex justify-center items-center pt-8 pb-28 drop-shadow-2xl bg-gradient-to-l from-blue-900 via-slate-900 to-black'>
+            <div className='flex flex-col max-w-md p-6 rounded-md sm:p-10  text-gray-200 bg-gradient-to-t from-blue-900 via-slate-900 to-sky-800'>
                 <div className='mb-8 text-center'>
                     <h1 className='my-3 text-4xl font-bold'>Signup</h1>
-                    <p className='text-sm text-gray-400'>Create a new account</p>
+                    <p className='text-sm text-gray-200'>Create a new account</p>
                 </div>
                 <form
                     onSubmit={handleSubmit}
@@ -79,7 +79,7 @@ const Register = () => {
                     <div className='space-y-4'>
                         <div className="form-control">
                             <div className="input-group">
-                                <select name='type' className="select select-bordered w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-green-500 bg-gray-200 text-gray-900">
+                                <select name='type' className="select select-bordered w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-green-500 bg-gray-200 text-gray-600">
                                     <option>Buyer</option>
                                     <option>Seller</option>
                                 </select>
@@ -95,7 +95,7 @@ const Register = () => {
                                 id='name'
                                 required
                                 placeholder='Enter Your Name Here'
-                                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-green-500 bg-gray-200 text-gray-900'
+                                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-green-500 bg-gray-200 text-gray-200'
                                 data-temp-mail-org='0'
                             />
                         </div>
@@ -105,7 +105,7 @@ const Register = () => {
                             </label>
                             <input
                                 type='file'
-                                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-green-500 bg-gray-200 text-gray-900'
+                                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-green-500 bg-gray-200 text-gray-200'
                                 id='image'
                                 name='image'
                                 accept='image/*'
@@ -122,7 +122,7 @@ const Register = () => {
                                 name='email'
                                 id='email'
                                 placeholder='Enter Your Email Here'
-                                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-green-500 bg-gray-200 text-gray-900'
+                                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-green-500 bg-gray-200 text-gray-200'
                                 data-temp-mail-org='0'
                             />
                         </div>
@@ -138,7 +138,7 @@ const Register = () => {
                                 id='password'
                                 required
                                 placeholder='*******'
-                                className='w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-200 focus:outline-green-500 text-gray-900'
+                                className='w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-200 focus:outline-green-500 text-gray-200'
                             />
                         </div>
                     </div>
@@ -155,7 +155,7 @@ const Register = () => {
                 </form>
                 <div className='flex items-center pt-4 space-x-1'>
                     <div className='flex-1 h-px sm:w-16 dark:bg-gray-700'></div>
-                    <p className='px-3 text-sm dark:text-gray-400'>
+                    <p className='px-3 text-sm dark:text-gray-200'>
                         Signup with social accounts
                     </p>
                     <div className='flex-1 h-px sm:w-16 dark:bg-gray-700'></div>
@@ -189,9 +189,9 @@ const Register = () => {
                         </svg>
                     </button>
                 </div>
-                <p className='px-6 text-sm text-center text-gray-400'>
+                <p className='px-6 text-sm text-center text-gray-200'>
                     Already have an account yet?{' '}
-                    <Link to='/login' className='hover:underline text-gray-600'>
+                    <Link to='/login' className='hover:underline text-gray-400'>
                         Sign In
                     </Link>
                     .
