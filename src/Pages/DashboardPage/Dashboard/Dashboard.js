@@ -34,7 +34,7 @@ const Dashboard = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="drawer drawer-mobile">
+            <div className="drawer drawer-mobile bg-gradient-to-l from-blue-900 via-slate-900 to-black">
                 <input id="dashboard-drawer" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content">
                     <Outlet></Outlet>
@@ -43,7 +43,7 @@ const Dashboard = () => {
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="dashboard-drawer" className="drawer-overlay"></label>
-                    <ul className="menu p-4 w-80  text-base-content">
+                    <ul className="menu p-4 w-80   text-gray-200">
 
                         {
                             isAdmin && <>
@@ -68,7 +68,7 @@ const Dashboard = () => {
 
 
                         <Link className="text-left" to='/'>
-                            <button className='px-4 py-2 mt-8 ml-0 font-semibold text-base lg:text-lg rounded bg-green-300'>
+                            <button className='px-4 py-2 mt-8 ml-0 font-semibold text-gray-800 lg:text-lg rounded bg-green-300'>
                                 Back to homepage
                             </button>
                         </Link>

@@ -44,7 +44,7 @@ const Home = () => {
     const advertiseProducts = products.filter(product => product.advertise === true);
 
     return (
-        <div>
+        <div className='bg-gradient-to-l from-blue-900 via-slate-900 to-black'>
             {/* <Banner></Banner> */}
             {
                 // advertiseProducts.length > 0 && <Advertise
