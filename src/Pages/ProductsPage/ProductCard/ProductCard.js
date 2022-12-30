@@ -25,7 +25,7 @@ const ProductCard = ({ product, setBookingProduct }) => {
     const { name, productName, image, sellerImg, resalePrice, date, quality, condition, phone, location, description, price, duration } = product;
     return (
         <div>
-            <div className="flex flex-col max-w-lg p-6  overflow-hidden rounded-lg shadow-md bg-gray-900 text-gray-100">
+            <div className="flex flex-col max-w-lg p-6  overflow-hidden rounded-lg shadow-2xl bg-slate-700 bg-gradient-to-t from-slate-800 via-blue-900 to-gray-900 text-gray-100">
                 <div className="flex space-x-4 mb-3">
                     <img alt="" src={sellerImg} className="object-cover w-12 h-12 rounded-full shadow bg-gray-500" />
 
@@ -55,10 +55,11 @@ const ProductCard = ({ product, setBookingProduct }) => {
                 </div>
                 <div className="flex justify-between w-full mt-3">
                     <p className="text-sm  text-left mr-3">Condition: {condition}</p>
-                    <p className="text-sm mr-3">Damage: {quality}</p>
+                    {/* <p className="text-sm mr-3">Damage: {quality}</p> */}
+                    <p className="text-base  text-left mr-3">Price:{price}$</p>
                 </div>
                 <div className="flex justify-between w-full mb-3">
-                    <p className="text-base  text-left mr-3">Price:{price}$</p>
+                    {/* <p className="text-base  text-left mr-3">Price:{price}$</p> */}
                     {/* <p className="text-base mr-3">Resale Price: {resalePrice}$</p> */}
                 </div>
                 {/* <p className="text-sm text-left mb-5">Reason: <span className="text-sm">{sellReason}</span></p> */}
