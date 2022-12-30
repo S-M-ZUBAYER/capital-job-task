@@ -65,7 +65,7 @@ const Footer = () => {
                                 </div>
 
                                 <div>
-                                    <h3 class="text-gray-7400 uppercase dark:text-white">Products</h3>
+                                    <h3 class="text-gray-400 uppercase dark:text-white">Products</h3>
                                     <a href="#" class="block mt-2 text-sm text-gray-400 dark:text-gray-400 hover:underline">Cricket bats</a>
                                     <a href="#" class="block mt-2 text-sm text-gray-400 dark:text-gray-400 hover:underline">Cricket balls</a>
                                     <a href="#" class="block mt-2 text-sm text-gray-400 dark:text-gray-400 hover:underline">Cricket helmets</a>
