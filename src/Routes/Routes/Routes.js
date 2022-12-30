@@ -17,6 +17,7 @@ import Payment from "../../PaymentPage/Payment/Payment";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Wishlist from "../../Pages/DashboardPage/ShareDashboard/Wishlist/Wishlist"
 import Contact from "../../Pages/ContactPage/Contact";
+import Blog from "../../Pages/BlogPage/Blog";
 
 const router = createBrowserRouter([
     {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact></Contact>
+            },
+            {
+                path: '/blog',
+                element: <Blog></Blog>
             }
 
         ]

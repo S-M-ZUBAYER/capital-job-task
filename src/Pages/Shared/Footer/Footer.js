@@ -2,21 +2,21 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className="mt-12">
-            <footer class="bg-white dark:bg-gray-900">
+        <div className="pt-12 bg-gradient-to-l from-blue-900 via-slate-900 to-black">
+            <footer class=" dark:bg-gray-900">
                 <div class="container p-6 mx-auto">
                     <div class="lg:flex">
                         <div class="w-full -mx-6 lg:w-2/5">
                             <div class="px-6">
                                 <div>
-                                    <a href="#" class="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">Yahoo Shopping</a>
+                                    <a href="#" class="text-xl font-bold text-gray-400 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">Yahoo Shopping</a>
                                 </div>
 
-                                <p class="max-w-sm mt-2 text-gray-500 dark:text-gray-400">Join 31,000+ other and never miss out on new products, collects, and more.</p>
+                                <p class="max-w-sm mt-2 text-gray-400 dark:text-gray-400">Join 31,000+ other and never miss out on new products, collects, and more.</p>
 
                                 <div class="flex mt-6">
                                     <a href="#"
-                                        class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                                        class="mx-2 text-gray-400 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                                         aria-label="Reddit">
                                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -26,7 +26,7 @@ const Footer = () => {
                                     </a>
 
                                     <a href="#"
-                                        class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                                        class="mx-2 text-gray-400 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                                         aria-label="Facebook">
                                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -36,7 +36,7 @@ const Footer = () => {
                                     </a>
 
                                     <a href="#"
-                                        class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                                        class="mx-2 text-gray-400 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                                         aria-label="Github">
                                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -51,30 +51,30 @@ const Footer = () => {
                         <div class="mt-6 lg:mt-0 lg:flex-1">
                             <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                                 <div>
-                                    <h3 class="text-gray-700 uppercase dark:text-white">About</h3>
-                                    <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Company</a>
-                                    <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">community</a>
-                                    <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Careers</a>
+                                    <h3 class="text-gray-400 uppercase dark:text-white">About</h3>
+                                    <a href="#" class="block mt-2 text-sm text-gray-400 dark:text-gray-400 hover:underline">Company</a>
+                                    <a href="#" class="block mt-2 text-sm text-gray-400 dark:text-gray-400 hover:underline">community</a>
+                                    <a href="#" class="block mt-2 text-sm text-gray-400 dark:text-gray-400 hover:underline">Careers</a>
                                 </div>
 
                                 <div>
-                                    <h3 class="text-gray-700 uppercase dark:text-white">Blog</h3>
-                                    <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">React</a>
-                                    <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Prototype inheritance</a>
-                                    <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Unit testing</a>
+                                    <h3 class="text-gray-400 uppercase dark:text-white">Blog</h3>
+                                    <a href="#" class="block mt-2 text-sm text-gray-400 dark:text-gray-400 hover:underline">React</a>
+                                    <a href="#" class="block mt-2 text-sm text-gray-400 dark:text-gray-400 hover:underline">Prototype inheritance</a>
+                                    <a href="#" class="block mt-2 text-sm text-gray-400 dark:text-gray-400 hover:underline">Unit testing</a>
                                 </div>
 
                                 <div>
-                                    <h3 class="text-gray-700 uppercase dark:text-white">Products</h3>
-                                    <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Cricket bats</a>
-                                    <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Cricket balls</a>
-                                    <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Cricket helmets</a>
+                                    <h3 class="text-gray-7400 uppercase dark:text-white">Products</h3>
+                                    <a href="#" class="block mt-2 text-sm text-gray-400 dark:text-gray-400 hover:underline">Cricket bats</a>
+                                    <a href="#" class="block mt-2 text-sm text-gray-400 dark:text-gray-400 hover:underline">Cricket balls</a>
+                                    <a href="#" class="block mt-2 text-sm text-gray-400 dark:text-gray-400 hover:underline">Cricket helmets</a>
                                 </div>
 
                                 <div>
-                                    <h3 class="text-gray-700 uppercase dark:text-white">Contact</h3>
-                                    <span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">+8801304979278</span>
-                                    <span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">smzubayer9004@email.com</span>
+                                    <h3 class="text-gray-400 uppercase dark:text-white">Contact</h3>
+                                    <span class="block mt-2 text-sm text-gray-400 dark:text-gray-400 hover:underline">+8801304979278</span>
+                                    <span class="block mt-2 text-sm text-gray-400 dark:text-gray-400 hover:underline">smzubayer9004@email.com</span>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +83,7 @@ const Footer = () => {
                     <hr class="h-px my-6 bg-gray-200 border-none dark:bg-gray-700" />
 
                     <div>
-                        <p class="text-center text-gray-500 dark:text-gray-400">© SSS Shop 2022 - All rights reserved</p>
+                        <p class="text-center text-gray-400 dark:text-gray-400">© SSS Shop 2022 - All rights reserved</p>
                     </div>
                 </div>
             </footer>

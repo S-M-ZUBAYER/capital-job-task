@@ -58,11 +58,11 @@ const LogIn = () => {
     }
 
     return (
-        <div className='flex justify-center items-center pt-8 drop-shadow-2xl'>
-            <div className='flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-gray-100 text-gray-900'>
+        <div className='flex justify-center items-center pt-8 pb-28 drop-shadow-2xl bg-gradient-to-l from-blue-900 via-slate-900 to-black'>
+            <div className='flex flex-col max-w-md p-6 rounded-md sm:p-10 text-gray-200 bg-gradient-to-t from-blue-900 via-slate-900 to-sky-800'>
                 <div className='mb-8 text-center'>
                     <h1 className='my-3 text-4xl font-bold'>Sign in</h1>
-                    <p className='text-sm text-gray-400'>
+                    <p className='text-sm text-gray-200'>
                         Sign in to access your account
                     </p>
                 </div>
@@ -164,9 +164,9 @@ const LogIn = () => {
                         </svg>
                     </button>
                 </div>
-                <p className='px-6 text-sm text-center text-gray-400'>
+                <p className='px-6 text-sm text-center text-gray-200'>
                     Don't have an account yet?{' '}
-                    <Link to='/register' className='hover:underline text-gray-600'>
+                    <Link to='/register' className='hover:underline text-gray-400'>
                         Sign up
                     </Link>
                     .
